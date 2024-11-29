@@ -1,5 +1,4 @@
 import { Component } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
 
 interface NavbarState {
   isMenuOpen: boolean;
@@ -19,12 +18,18 @@ export default class Navbar extends Component<{}, NavbarState> {
     const { isMenuOpen } = this.state;
 
     return (
-      <nav className="bg-white p-4 shadow-md flex flex-col-reverse md:flex-row justify-between items-center">
+      <nav className="bg-white w-full absolute min-h-10 px-4 py-2 flex flex-col-reverse md:flex-row justify-between items-center">
         <div className="w-full md:w-auto flex justify-between">
           {!this.state.isMenuOpen && (
             <h2 className="text-xl font-bold">BFF Trip</h2>
           )}
-          <div className={(this.state.isMenuOpen?"flex justify-center items-center w-full":"")}>
+          <div
+            className={
+              this.state.isMenuOpen
+                ? "flex justify-center items-center w-full"
+                : ""
+            }
+          >
             <button
               className="text-gray-600 md:hidden"
               onClick={this.toggleMenu}
@@ -51,62 +56,44 @@ export default class Navbar extends Component<{}, NavbarState> {
           </div>
         </div>
         <div>
-          <BrowserRouter>
-            <ul
-              className={`mt-4 md:mt-0 md:flex md:items-center md:space-x-6 ${
-                isMenuOpen ? "block" : "hidden"
-              }`}
-            >
-              <li>
-                <Link
-                  to="/"
-                  className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/packages"
-                  className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
-                >
-                  Packages
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/gallery"
-                  className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
-                >
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/destination"
-                  className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
-                >
-                  Destination
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </BrowserRouter>
+          <ul
+            className={`mt-4 md:mt-0 md:flex md:items-center md:space-x-6 ${
+              isMenuOpen ? "block" : "hidden"
+            }`}
+          >
+            <li>
+              <a
+                href="#home"
+                className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#destination"
+                className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
+              >
+                Destination
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="block py-2 px-4 text-center text-gray-700 hover:bg-gray-100"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     );
