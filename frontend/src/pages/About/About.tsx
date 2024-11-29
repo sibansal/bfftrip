@@ -18,7 +18,7 @@ const About: React.FC = () => {
               It all started with three friends and a shared dream. What began as a casual conversation over coffee became a burning passion to change the way people experience travel. Each of us brought something unique to the table – one had the vision, one had the technical expertise, and the other had a deep love for adventure. 
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
-              We saw the potential to combine our skills, creativity, and drive to help others explore the world in ways they never imagined. That’s how **BFFTravel** was born – a travel agency created by friends, for people who crave the thrill of new experiences, the joy of discovering hidden gems, and the comfort of seamless travel planning. 
+              We saw the potential to combine our skills, creativity, and drive to help others explore the world in ways they never imagined. That’s how <strong>BFF Trip</strong> was born – a travel agency created by friends, for people who crave the thrill of new experiences, the joy of discovering hidden gems, and the comfort of seamless travel planning. 
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
               Together, we are more than just a team; we’re a family. Our shared values of trust, adventure, and delivering exceptional service guide everything we do. From selecting the best destinations to curating personalized travel packages, we aim to create unforgettable experiences for every traveler who chooses us. 
@@ -37,7 +37,7 @@ const About: React.FC = () => {
         <div className="mt-12 text-center">
           <h3 className="text-lg text-primary font-medium">Join us on this amazing journey</h3>
           <p className="text-xl text-gray-700 mt-2">
-            Let us help you create memories that will last a lifetime. Explore the world, one adventure at a time, with **BFFTravel**.
+            Let us help you create memories that will last a lifetime. Explore the world, one adventure at a time, with <strong>BFF Trip</strong>.
           </p>
         </div>
       </div>

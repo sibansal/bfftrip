@@ -32,7 +32,7 @@ export const Footer = () => {
 
         <div className="mt-10 text-center">
           <p className="text-sm text-neutral-400">
-            &copy; {new Date().getFullYear()} bfftravel.in. All rights reserved.
+            &copy; {new Date().getFullYear()} bfftrip.in. All rights reserved.
           </p>
         </div>
       </div>
