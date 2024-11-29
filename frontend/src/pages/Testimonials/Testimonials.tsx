@@ -3,23 +3,23 @@ import Slider from 'react-slick';
 
 const testimonialsData = [
   {
-    quote: "The best travel experience I've ever had! The service was exceptional.",
-    name: "John Doe",
-    designation: "CEO, TechCorp",
+    quote: "Nice words coming soon after first trip.",
+    name: "",
+    designation: "",
     image: "https://via.placeholder.com/100",
   },
   {
-    quote: "Amazing destinations and the best customer service. Highly recommend!",
-    name: "Jane Smith",
-    designation: "Founder, EcoTours",
+    quote: "Nice words coming soon after first trip.",
+    name: "",
+    designation: "",
     image: "https://via.placeholder.com/100",
   },
   {
-    quote: "A seamless experience from start to finish. Couldn't ask for more!",
-    name: "Alex Brown",
-    designation: "Manager, Green Travels",
+    quote: "Nice words coming soon after first trip.",
+    name: "",
+    designation: "",
     image: "https://via.placeholder.com/100",
-  },
+  }
 ];
 
 const Testimonials: React.FC = () => {

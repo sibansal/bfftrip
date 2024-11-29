@@ -33,7 +33,7 @@ const BookingProcess: React.FC = () => {
 
           {/* Column 2: Image Placeholder */}
           <div className="flex justify-center items-center">
-            <div className="w-72 h-72 bg-gray-300 rounded-lg flex justify-center items-center text-white text-2xl shadow-2xl shadow-black">
+            <div className="w-72 mt-5 h-72 bg-gray-300 rounded-lg flex justify-center items-center text-white text-2xl shadow-2xl shadow-black">
               <img src="/assets/images/booking-process.jpg" alt="" />
             </div>
           </div>

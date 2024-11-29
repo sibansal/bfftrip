@@ -1,5 +1,5 @@
 // Gallery.tsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Gallery: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -10,8 +10,11 @@ const Gallery: React.FC = () => {
     "/assets/images/destination/manali.jpg",
     "/assets/images/destination/goa.jpg",
     "/assets/images/destination/leh.jpg",
-
-
+    "/assets/images/destination/rishikesh_1.jpeg",
+    "/assets/images/destination/rishikesh_2.jpeg",
+    "/assets/images/destination/birbilling.jpeg",
+    "/assets/images/destination/birbilling_2.jpeg",
+    "/assets/images/destination/rishikesh_3.jpeg",
     // Add more image paths as needed
   ];
 
@@ -33,17 +36,19 @@ const Gallery: React.FC = () => {
         {/* Section Title */}
         <div className="text-center mb-8">
           <h3 className="text-sm text-gray-600 uppercase">Gallery</h3>
-          <h2 className="text-4xl font-semibold text-gray-800 mt-2">Explore Our Places</h2>
+          <h2 className="text-4xl font-semibold text-gray-800 mt-2">
+            Explore Our Places
+          </h2>
         </div>
 
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {images.map((image, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative m-auto">
               <img
                 src={image}
                 alt={`Place ${index + 1}`}
-                className="w-full h-auto object-cover cursor-pointer rounded-lg transition-transform transform hover:scale-105"
+                className="w-96 h-64 object-cover cursor-pointer rounded-lg transition-transform transform hover:scale-105"
                 onClick={() => openModal(image)}
               />
             </div>
@@ -61,9 +66,9 @@ const Gallery: React.FC = () => {
                 X
               </button>
               <img
-                src={selectedImage || ''}
+                src={selectedImage || ""}
                 alt="Selected"
-                className="max-w-full max-h-full object-contain rounded-lg"
+                className="w-full h-full object-contain rounded-lg"
               />
             </div>
           </div>

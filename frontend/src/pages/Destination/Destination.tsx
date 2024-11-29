@@ -16,15 +16,15 @@ export const Destination: React.FC = () => {
             location="India"
           />
           <Card
-            image="/assets/images/destination/leh.jpg"
-            place="Leh, Himachal Pradesh"
+            image="/assets/images/destination/rishikesh_1.jpeg"
+            place="Rishikesh, Uttarakhand"
             price="$1,199"
             timeAgo="Coming Soon"
             location="India"
           />
           <Card
-            image="/assets/images/destination/goa.jpg"
-            place="Goa, Goa"
+            image="/assets/images/destination/birbilling.jpeg"
+            place="Bir Billing, Himachal Pradesh"
             price="$799"
             timeAgo="Coming soon."
             location="India"

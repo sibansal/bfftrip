@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
           {/* Right Column: Google Map */}
           <div className="relative w-full h-80 rounded-lg overflow-hidden">
             <iframe title='contact-map'
-              src="https://www.google.com/maps/embed?"
+              src="https://maps.google.com/maps?q=ajauli+himachal&t=&z=13&ie=UTF8&iwloc=&output=embed"
               width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy"></iframe>
           </div>
         </div>
