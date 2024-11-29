@@ -1,5 +1,6 @@
 {
   "name": "bff-trip",
+  "homepage": "https://sibansal.github.io/bfftrip",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
   },
   "devDependencies": {
     "@types/react-slick": "^0.23.13",
+    "gh-pages": "^6.2.0",
     "react-router-dom": "^7.0.1",
     "tailwindcss": "^3.4.15"
   }
