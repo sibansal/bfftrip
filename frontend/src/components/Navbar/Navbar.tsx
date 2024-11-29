@@ -18,7 +18,7 @@ export default class Navbar extends Component<{}, NavbarState> {
     const { isMenuOpen } = this.state;
 
     return (
-      <nav className="bg-white w-full absolute min-h-10 px-4 py-2 flex flex-col-reverse md:flex-row justify-between items-center">
+      <nav className="bg-white w-full fixed min-h-10 px-4 py-2 flex flex-col-reverse md:flex-row justify-between items-center">
         <div className="w-full md:w-auto flex justify-between">
           {!this.state.isMenuOpen && (
             <h2 className="text-xl font-bold">BFF Trip</h2>
