@@ -68,7 +68,7 @@ const Gallery: React.FC = () => {
               <img
                 src={selectedImage || ""}
                 alt="Selected"
-                className="w-full h-full object-contain rounded-lg"
+                className="w-full h-full max-h-screen object-contain rounded-lg"
               />
             </div>
           </div>
