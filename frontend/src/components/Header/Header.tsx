@@ -5,7 +5,7 @@ export const Header = () => {
     <header className="w-full h-full" id="home">
       <div className="pt-0">
         <div className="hero mt-0 w-full h-full flex items-center justify-center">
-          <div className="h-full left-0 min-h-screen max-w-screen absolute w-full -z-10">
+          <div className="h-full left-0 min-h-screen max-w-screen absolute w-full -z-10 bg-neutral-700">
             <img
               src={hero_bg}
               className="h-full left-0 min-h-screen max-w-screen absolute w-full -z-10 object-cover"
