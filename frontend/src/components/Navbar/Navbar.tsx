@@ -18,10 +18,11 @@ export default class Navbar extends Component<{}, NavbarState> {
     const { isMenuOpen } = this.state;
 
     return (
-      <nav className="z-50 bg-white w-full fixed min-h-10 px-4 py-2 flex flex-col-reverse md:flex-row justify-between items-center">
+      <nav className="z-50 bg-[#fafafa] w-full fixed min-h-10 px-4 py-2 flex flex-col-reverse md:flex-row justify-between items-center">
         <div className="w-full md:w-auto flex justify-between">
           {!this.state.isMenuOpen && (
-            <h2 className="text-xl font-bold">BFF Trip</h2>
+            <img src="/assets/images/logo.svg" className="h-10"
+            alt="BFF Trip" />
           )}
           <div
             className={
@@ -31,7 +32,7 @@ export default class Navbar extends Component<{}, NavbarState> {
             }
           >
             <button
-              className="text-gray-600 md:hidden"
+              className="text-gray-600 md:hidden pt-2"
               onClick={this.toggleMenu}
             >
               <svg
