@@ -16,7 +16,11 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <ul className="space-y-2">
+            <li><a href="https://www.facebook.com/bfftrip" className="hover:text-primary">Facebook</a></li>
               <li><a href="https://www.instagram.com/bff_trip" className="hover:text-primary">Instagram</a></li>
+              <li><a href="https://linkedin.com/company/bfftrip" className="hover:text-primary">Linkedin</a></li>
+              <li><a href="https://x.com/bfftrip" className="hover:text-primary">Twitter</a></li>
+              <li><a href="https://www.youtube.com/@bfftripofficial" className="hover:text-primary">Youtube</a></li>
             </ul>
           </div>
 
