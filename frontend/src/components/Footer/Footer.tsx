@@ -23,8 +23,8 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li>Email: <a href="bfftripoffcial@gmail.com" className="hover:text-primary">bfftripoffcial@gmail.com</a></li>
-              <li>Phone: +91 9317537066</li>
+              <li>Email: <a href="mailto: queries@bfftrip.in" className="hover:text-primary">queries@bfftrip.in</a></li>
+              <li>Phone: <a href="tel:+919317537066" className="hover:text-primary">+91 9317537066</a></li>
               <li>Address: Ajauli, Una, Himachal Pradesh, India - 173025</li>
             </ul>
           </div>
