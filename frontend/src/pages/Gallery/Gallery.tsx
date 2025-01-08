@@ -18,6 +18,17 @@ const Gallery: React.FC = () => {
     // Add more image paths as needed
   ];
 
+  const manali_trip_dec_24 = [
+    "/assets/images/trips/manali-dec-2024/IMG_8155_compressed.jpg",
+    "/assets/images/trips/manali-dec-2024/IMG_8303_compressed.jpg",
+    "/assets/images/trips/manali-dec-2024/IMG_20241226_152119_189_compressed.jpg",
+    "/assets/images/trips/manali-dec-2024/IMG-20241221-WA0034_compressed.jpg",
+    "/assets/images/trips/manali-dec-2024/IMG_7821_compressed.jpg",
+    "/assets/images/trips/manali-dec-2024/IMG_20241222_172811_compressed.jpg",
+    "/assets/images/trips/manali-dec-2024/IMG_20241226_152103_145_compressed.jpg",
+    "/assets/images/trips/manali-dec-2024/IMG_8166_compressed.jpg",
+  ];
+
   // Open Modal with the selected image
   const openModal = (image: string) => {
     setSelectedImage(image);
@@ -44,6 +55,23 @@ const Gallery: React.FC = () => {
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {images.map((image, index) => (
+            <div key={index} className="relative m-auto">
+              <img
+                src={image}
+                alt={`Place ${index + 1}`}
+                className="w-96 h-64 object-cover cursor-pointer rounded-lg transition-transform transform hover:scale-105"
+                onClick={() => openModal(image)}
+              />
+            </div>
+          ))}
+        </div>
+
+        <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5">
+          Manali Trip: Dec 2024
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {manali_trip_dec_24.map((image, index) => (
             <div key={index} className="relative m-auto">
               <img
                 src={image}
